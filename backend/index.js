@@ -12,7 +12,7 @@ app.use(cors()); // Allow requests from your front-end
 
 // Simple test route
 app.get("/", (req, res) => {
-  res.send("Hello from AI Image Generator Backend!");
+  res.send("Hello from Inquiry Management System Backend!");
 });
 
 // Function to start the server
