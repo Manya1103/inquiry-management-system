@@ -2,13 +2,16 @@ import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
 import connectDB from "./config/mongoDB.js";
+import inquiryRouter from "./routes/inquiryRoutes.js";
 
 dotenv.config(); // Load environment variables from .env file
 
 const app = express();
 
 // Middleware
+app.use(express.json()); // Allows server to read JSON data
 app.use(cors()); // Allow requests from your front-end
+app.use("/api/inquiries", inquiryRouter); 
 
 // Simple test route
 app.get("/", (req, res) => {
