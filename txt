@@ -1,0 +1,19 @@
+// backend
+npm init -y
+npm install express mongoose cors dotenv
+npm install --save-dev nodemon  // Dev dependency (auto restart)
+npx gitignore node
+
+// frontend 
+npm create vite@latest frontend -- --template react
+npm install
+npm install axios
+npm install -D tailwindcss@3 postcss autoprefixer
+npx tailwindcss init -p
+npm install react-router-dom lucide-react
+npm install tailwind-styled-components
+
+mongodb+srv://ims:<db_password>@cluster0.npoml3l.mongodb.net/
+
+EojtVBaYRieMTZKx
+ims
